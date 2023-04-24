@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in Html</title>
+</head>
+<body>
+    <form>
+        <h3>General Details</h3>
+        <!-- div is used to just segregate the things  -->
+        <!-- name attribute is used to connect frontend to the backend -->
+        <!-- placeholder is used to indicate the text in box before starting to write the text(just to give an idea to user what to write) -->
+        <!-- value is used to give bydefault value (Refer in email) -->
+        <!-- size attribute is used to set the size of the text box and it is applicable for limited(name,email etc) -->
+        <!-- max length is used to give the size of the text word -->
+        <!-- required is used to tell this column in mandatory to submit  -->
+        <!-- for radio button and checkbox button checked is for validation -->
+        <!-- autocomplete means the browser will suggest the recent words used to autofill -->
+        <div>
+           <label for="username">username:</label><br>
+           <input type="text" name="username" placeholder="enter a username" size="10" maxlength="10" required autocomplete="on">
+        </div>
+        <div>
+            <label for="fullName">Fullname:</label><br>
+            <input type="text" name="fullName">
+         </div>
+         <div>
+            <label for="TelNo">Phone number:</label><br>
+            <input type="number" name="phonenumber">
+         </div>
+         <div>
+            <label for="Email">email:</label><br>
+            <!-- It will accept if there is @ in the input -->
+            <input type="email" name="Email" value ="veeraphani21@gmail.com">
+         </div>
+         <div>
+            <label for="Password">Password:</label><br>
+            <input type="password" name="password">
+         </div>
+         
+
+         <div>
+            <label for="Gender">Gender:</label> <br>
+            Male:<input type="radio" name="gender" checked> <br>
+            Female:<input type="radio" name="gender" checked> <br>
+        </div>
+        <div>
+            <label for="Subjects">Subjects</label><br>
+            Html:<input type="checkbox" name="html"><br>
+            CSS:<input type="checkbox" name="CSS"><br>
+            JS:<input type="checkbox" name="JS"><br>
+
+        </div>
+        <div>
+            <!-- //In type we can use date,datetime-local,time,month,week,file,color,range -->
+            <input type="date">
+         </div>
+         <div>
+            <label for="Subjects">Choose a Subject: </label>
+            <select name = "Subject">
+                <!-- option values are used to know what should be in the dropdown -->
+                <option value ="html">html</option>
+                <option value ="Css">Css</option>
+                <option value ="JS">Js</option>
+            </select>
+         </div>
+         <div>
+            <label for="Address" >Address</label> <br>
+            <textarea name = "text" cols="30" rows="5"></textarea>
+         </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+         </div>
+         
+
+    </form>
+    
+</body>
+</html>
