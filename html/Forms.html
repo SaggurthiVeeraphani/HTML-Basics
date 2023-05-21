@@ -24,16 +24,20 @@
         </div>
         <div>
             <label for="fullName">Fullname:</label><br>
-            <input type="text" name="fullName">
+            <!-- Readonly is used to just read the input we cant edit that value -->
+            <input type="text" name="fullName" value="Veera Phani" readonly>
          </div>
          <div>
             <label for="TelNo">Phone number:</label><br>
-            <input type="number" name="phonenumber">
+            <!-- disabled field is like it will be blur in colour and user will get to know it is not editable -->
+            <!-- regix pattern is used to check whether the given number is valid or not -->
+            <input type="number" name="phonenumber" pattern="/^\+?[1-9][0-9]{7,14}$/" value="8686345250" disabled>
          </div>
          <div>
             <label for="Email">email:</label><br>
             <!-- It will accept if there is @ in the input -->
-            <input type="email" name="Email" value ="veeraphani21@gmail.com">
+            <!-- regix pattern is used to check whether the given email is valid or not(regix pattern is from google) -->
+            <input type="email" name="Email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" value ="veeraphani21@gmail.com">
          </div>
          <div>
             <label for="Password">Password:</label><br>
@@ -55,7 +59,8 @@
         </div>
         <div>
             <!-- //In type we can use date,datetime-local,time,month,week,file,color,range -->
-            <input type="date">
+            <!-- In date we can validate through giving min and max date in format --- yyyy/mm/date -->
+            <input type="date" min="2023-04-23" max="2023-05-16">
          </div>
          <div>
             <label for="Subjects">Choose a Subject: </label>
@@ -75,6 +80,7 @@
             <input type="reset" value="Reset">
 
          </div>
+         
          
 
     </form>

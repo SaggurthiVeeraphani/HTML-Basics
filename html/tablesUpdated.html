@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tables</title>
+    <!-- In this way also we can add boarder to table -->
+    <!-- <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- thead and tbody are two division in tables(thead consists of head part and body consists of data) -->
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+    
+        </thead>
+        <tbody>
+            <tr>
+                <td>200</td>
+                <td>Phani</td>
+                <td>25</td>
+    
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Srinu</td>
+                <td>26</td>
+    
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>kumar</td>
+                <td>90</td>
+    
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <!-- cellspacing is used to give space between the cells
+    Cellpadding is used to give space around the content of a cell -->
+    <!-- rowspan is used to combine rows and colspan is used to combine column -->
+    <table border="1" cellspacing="2" cellpadding="10">
+        <thead>
+            <tr>
+                <th colspan="2">Candidates</th>
+                <th>Maths</th>
+                <th>Hindi</th>
+                <th>English</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th>Phani</th>
+                <td>80/100</td>
+                <td>50/100</td>
+                <td>45/100</td>
+                
+            </tr>
+            <tr>
+                <th rowspan="2">Munna</th>
+                <td>70/100</td>
+                <td>60/100</td>
+                <td>40/100</td>
+                
+            </tr>
+            <tr>
+                <th>chimku</th>
+                <td>85/100</td>
+                <td>55/100</td>
+                <td>95/100</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

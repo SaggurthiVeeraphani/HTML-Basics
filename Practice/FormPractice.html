@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <h1 align="center">Flipkart Vendor Form</h1>
+        <div>
+          <label for="Name"><strong>Name:</strong></label><br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <input type="text" name="name" id="name" placeholder="Surname" required>
+        </div>
+        <div>
+            <label for="DOB"><strong>Date of Birth:</strong></label><br>
+            <input type="date" name="DOB" id="DOB"required>
+        </div>
+        <div>
+            <label for="Current Location"><strong>Current Location:</strong></label><br>
+            <textarea cols="30" rows="5" name="Current Location" id="Current Location" placeholder="Describe the product"></textarea>
+        </div>
+        <div>
+            <label for="Email"><strong>Email:</strong></label><br>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="AadharCard"><strong>Upload Aadhar Card:</strong></label><br>
+            <input type="file" name="AadharCard" id="AadharCard">
+        </div>
+        <div>
+            <label for="Pan"><strong>Enter PAN Card Number:</strong></label><br>
+            <input type="text" name="Pan" id="pan" required pattern="/([A-Z]){5}([0-9]){4}([A-Z]){1}$/">
+        </div>
+        <div>
+            <label for="Items"><strong>Items to sell:</strong></label><br>
+            <select name="Items" id="Items">
+                <option value="Select Product" disabled>Select Product</option>
+                <option value="shoes">Shoes</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Electronics">Electronics</option>
+
+            </select>
+        </div>
+        <div>
+           <label for="Location"><Strong>Are you in India?</Strong></label><br>
+           Yes:<input type="radio" name="Location" checked>
+           No:<input type="radio" name="Location" checked>
+        </div>
+        <div>
+            <label for="Delivert"><strong>Location open for delivery:</strong></label><br>
+            Delhi:<input type="checkbox" name="Delhi">
+            Hyderabad:<input type="checkbox" name="Hyderabad">
+            Mumbai:<input type="checkbox" name="Mumbai">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
